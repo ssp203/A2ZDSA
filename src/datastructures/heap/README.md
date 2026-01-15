@@ -112,15 +112,15 @@ class MinHeap {
     // Heapify down from index i
     private void minHeapify(int i) {
         int smallest = i;
-        int left = left(i);
-        int right = right(i);
+        int leftChild = left(i);
+        int rightChild = right(i);
         
-        if (left < size && heap[left] < heap[smallest]) {
-            smallest = left;
+        if (leftChild < size && heap[leftChild] < heap[smallest]) {
+            smallest = leftChild;
         }
         
-        if (right < size && heap[right] < heap[smallest]) {
-            smallest = right;
+        if (rightChild < size && heap[rightChild] < heap[smallest]) {
+            smallest = rightChild;
         }
         
         if (smallest != i) {
@@ -346,9 +346,9 @@ public int minMeetingRooms(int[][] intervals) {
 ### Hard
 - Merge K sorted lists
 - Sliding window median
-- Find minimum in rotated sorted array II
 - Maximum performance of a team
 - IPO
+- Employee free time
 
 ## Heap Sort
 

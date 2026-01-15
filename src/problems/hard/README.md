@@ -69,12 +69,12 @@ Hard problems typically involve:
 
 ### Computational Geometry
 - Skyline problem
-- Largest rectangle in histogram
 
-### Sliding Window
+### Sliding Window & Monotonic Stack
 - Sliding window maximum
 - Sliding window median
 - Minimum window substring
+- Largest rectangle in histogram (uses monotonic stack)
 
 ## Problem Format
 
